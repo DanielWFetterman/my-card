@@ -1,11 +1,35 @@
 <!doctype html>
 <html lang="en">
 
+<div class="wrapper">
+
+  <div class="card">
+
+    <title>This card has a button and a image</title>
+    
+    <p>The image is a meme and says "I know HTML How to meet ladies"</p>
+    
+    <img id="HTML img" src="https://images.fineartamerica.com/images/artworkimages/mediumlarge/3/i-know-html-how-to-meet-ladies-funny-web-designer-print-noirty-designs.jpg" alt="HTML is fun"/>
+
+      <a href="http://hax.psu.edu" target="http://hax.psu.edu">
+        <button class="button"> Details </button> 
+      </a>  
+
+  </div>
+
+  <button class="dup-btn"> Duplicate </button>
+  <button class="change-name-btn"> Change Name </button>
+  <button class="change-color-btn"> Change Color </button>
+  <button class="del-btn"> Delete </button>
+
+</div>
+
+
 <head>
-  <meta charset="utf-8">
+  <!-- <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
   <meta name="Description" content="Put your description here.">
-  <base href="/">
+  <base href="/"> -->
 
   <style>
     html,
@@ -14,6 +38,36 @@
       padding: 0;
       font-family: sans-serif;
       background-color: #ededed;
+    }
+
+    .card { 
+      border-style: solid;
+      border-width: 3px;
+      border-color: black;
+      border-radius: 10px;
+      width: 450px;
+    }
+    .card img {
+      margin: 25px;
+      width: 300px;
+      height: auto;
+    }
+
+    .wrapper button {
+      align-items: flex-start;
+      font-size: 24px;
+      color: rgb(14, 29, 247);
+      background-color: white;
+      margin: 24px;
+    }
+    .wrapper button:hover {
+      color: white;
+      background-color: black;
+    }
+
+    .card p {
+      font-size: 30px;
+      margin: 25px;
     }
   </style>
   <title>my-card</title>
